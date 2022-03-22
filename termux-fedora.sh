@@ -13,7 +13,6 @@ case "$1" in
 	    DOCKERIMAGE=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Container/aarch64/images/Fedora-Container-Base-34-1.2.aarch64.tar.xz
 	    ;;
 	uninstall)
-	uninstall)
 	    chmod -R 777 ~/fedora
 	    rm -rf ~/fedora
 		rm -f /data/data/com.termux/files/usr/bin/startfedora
