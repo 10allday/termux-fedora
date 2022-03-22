@@ -6,12 +6,6 @@ case "$1" in
 	f30_arm64)
 	    DOCKERIMAGE=https://dl.fedoraproject.org/pub/archive/fedora/linux/releases/30/Container/aarch64/images/Fedora-Container-Base-30-1.2.aarch64.tar.xz
             ;;
-        f35_arm64)
-	    DOCKERIMAGE=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Container/aarch64/images/Fedora-Container-Base-35-1.2.aarch64.tar.xz
-	    ;;
-	f34_arm64)
-	    DOCKERIMAGE=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Container/aarch64/images/Fedora-Container-Base-34-1.2.aarch64.tar.xz
-	    ;;
 	uninstall)
 	    chmod -R 777 ~/fedora
 	    rm -rf ~/fedora
@@ -19,7 +13,7 @@ case "$1" in
 	    exit 0
 	    ;;
 	*)
-	    echo $"Usage: $0 {f30_arm64|f34_arm64|f35_arm64|uninstall}"
+	    echo $"Usage: $0 {f30_arm64|uninstall}"
 	    exit 2
 	    ;;
 esac
